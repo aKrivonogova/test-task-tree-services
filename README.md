@@ -6,7 +6,7 @@
 # Инструкция по установке:
 
 ```sh
-git clone https://github.com/test-task-tree-services
+git clone https://github.com/aKrivonogova/test-task-tree-services
 ```
 ```sh
 cd test-task-tree-services
