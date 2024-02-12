@@ -6,10 +6,12 @@
 # Инструкция по установке:
 
 ```sh
-git clone https://github.com/aKrivonogova/mesto
+git clone https://github.com/aKrivonogova/test-task-tree-services
 ```
 ```sh
-cd mesto
+cd test-task-tree-services
+Public
+
 ```
 ```sh
 npm i webpack --save-dev
