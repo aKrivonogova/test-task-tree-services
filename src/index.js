@@ -1,7 +1,11 @@
 // массив услуг 
 
 import servicesCollection from "./servicesCollection";
-import './style.css'; // добавьте импорт главного файла стилей
+import './style.css'; 
+
+const NODE = 1; 
+const TREE_SERVICES_CONTAINER = 'tree-services-container'; 
+
         // создание элемента 
         function createElement(elementSelector){
             return document.createElement(elementSelector)
@@ -38,7 +42,7 @@ import './style.css'; // добавьте импорт главного файл
                 // Добавление элемента в список 
                 appendChildToContainer(elementsList,listItem)
                 // Если это узел 
-                if(serviceItem.node === 1){
+                if(serviceItem.node === NODE){
                     // Повторить функцию 
                     buildServicesList(servicesCollection,serviceItem.id,listItem)
                 }
@@ -48,7 +52,7 @@ import './style.css'; // добавьте импорт главного файл
             return elementsList;
         }
 
- const TREE_SERVICES_CONTAINER = 'tree-services-container'; 
+
  const listElementContainer = document.getElementById(TREE_SERVICES_CONTAINER);
 
 buildServicesList(servicesCollection.services, null, listElementContainer);
